@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Atrybut action to punkt styku z back endem. Jeśli chcemy, aby dane były przetworzone przez jakiś skrypt zewnętrzny to w tym miejscu musimy podać do niego adres. Jeśli jednak chcemy, aby formularz był obsługiwany na poziomie przeglądarki, to zostawiamy atrybut action pusty -->
+
+    <!-- ### get - jawne - przesyłane w url
+         ### post - niejawne - obsługowane po stronie backendu
+     -->
+    <form action="form.php" method="post">
+        <label for="username">Imię</label>
+        <input type="text" name="username" id="username" required><br>
+        <input type="email" name="email" placeholder="Podaj adres email"><br>
+        <input type="number" name="quantity" min="1" max="10" disabled><br>
+        <label><input type="checkbox" name="agreement">Wyrażam zgodę na przetwarzanie danych osobowych</label><br>
+
+        <!-- name pozwala w inputach typu radio pozwala zaznaczyć tylko jeden input -->
+         
+        <label><input type="radio" name="choise">Tak</label><br>
+        <label><input type="radio" name="choise">Nie</label><br>
+        <label><input type="radio" name="choise">Nie wiem</label><br>
+
+        <select name="city">
+            <option value="Kraków">Kraków</option>
+            <option value="Gdańsk">Gdańsk</option>
+            <option value="Warszawa" selected>Warszawa</option>
+            <option value="Poznań">Poznań</option>
+        </select><br>
+
+        <textarea name="message" maxlength="50"></textarea><br>
+
+        <input type="submit" value="Wyślij">
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
