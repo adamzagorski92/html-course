@@ -1,8 +1,77 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0;
+    max-width: 100%;
+    gap:2em;
+    background-color: #FFB6C1;
+    color: #003366;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    color: #4682B4;
+}
+
+#content {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+#generalNav {
+    background-color: #003366;
+    margin: 0;
+    width: 100%;
+    box-shadow: 5px 5px 15px #0033667e;
+}
+
+#navList {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;   /* Wyśrodkowanie w poziomie */
+}
+
+
+#navList li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease; /* Płynne przejście dla animacji */
+}
+
+#navList li a:hover {
+    color: #FF69B4; /* Różowy kolor na hover */
+    transform: scale(1.2); /* Powiększenie o 20% */
+    text-shadow: 0 0 10px #FF69B4; /* Świecący efekt */
+}
+
+
+footer {
+    background-color: aqua;
+    width: 100%;
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 100em;
+}
+
+aside {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #003366;
+    padding: 1em;
+    text-align: center;
+}
+
+aside a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Płynne przejście dla animacji */
+}
+
+aside a:hover {
+    color: #FF69B4; /* Różowy kolor na hover */
+    transform: scale(1.2); /* Powiększenie o 20% */
+    text-shadow: 0 0 10px #FF69B4; /* Świecący efekt */
 }
